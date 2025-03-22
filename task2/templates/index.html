@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Conversations</h2>
+            <ul id="conversations-list">
+                <!-- List of conversations will be populated here -->
+            </ul>
+        </div>
+        <div class="chat-container">
+            <div class="header">
+                <select id="model-select">
+                    <option value="gpt-4o">GPT-4o</option>
+                    <option value="gpt-3.5-turbo">GPT-3.5-turbo</option>
+                    <option value="gpt-o3-mini">GPT-o3 mini</option>
+                </select>
+            </div>
+            <div id="chat-box">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <div class="message-box">
+                <input type="text" id="user-message" placeholder="Type your message here...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

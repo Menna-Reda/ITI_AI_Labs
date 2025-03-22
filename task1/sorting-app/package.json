@@ -1,0 +1,21 @@
+{
+  "name": "sorting-app",
+  "version": "1.0.0",
+  "description": "A user-friendly application for sorting a set of numbers using various algorithms.",
+  "main": "src/script.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "sorting",
+    "algorithms",
+    "quick sort",
+    "user interface"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
